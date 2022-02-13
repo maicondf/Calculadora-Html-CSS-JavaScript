@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, yellow, red);
+    min-height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.calculator {
+    position: relative;
+    background: #333;
+    padding: 20px 15px 15px;
+    border-radius: 10px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#result {
+    background-color: rgb(165, 199, 165);
+    font-weight: bold;
+    padding: 5px;
+    width: 217px;
+    height: 38px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.btn-clear{
+    background: linear-gradient(180deg, #d87070, firebrick);
+}
+
+.btn-clear:hover {
+    background: linear-gradient(180deg, firebrick, #d87070);
+}
+
+.btn-operator {
+    background: linear-gradient(180deg, #746c29, orange );
+}
+
+.btn-operator:hover {
+    background: linear-gradient(180deg, orange , #746c29);
+}
+
+button {
+    display: grid;
+    position: relative;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    background: linear-gradient(180deg, rgb(61, 92, 231), blue);
+    border: none;
+    color: white;
+    margin: 2px;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: linear-gradient(180deg, blue, rgb(61, 92, 231));
+}
